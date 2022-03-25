@@ -25,5 +25,6 @@ Route.post('/signin', 'SessionController.signIn')
 
 
 Route.group(() => {
-Route.post('/notes', 'NoteController.store')
+Route.post('/answer', 'QuestionController.store')
+Route.get('/questions', 'QuestionController.index')
 }).middleware('auth')
